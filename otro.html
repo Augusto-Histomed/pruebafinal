@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Arauco On Tour</title>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            $.getJSON("http://www.arauco-ontour.cl/admin/APPcultura.php", function(result) {
+
+                $.each(result, function(i, field) {
+
+                    cli_id            = field.cli_id;
+
+                    cli_nombre        = field.cli_nombre;
+
+                    cli_nombre_ingles = field.cli_nombre_ingles;
+
+                    cli_calle         = field.cli_calle;
+
+                    cli_numero        = field.cli_numero;
+
+                    cli_comuna        = field.cli_comuna;
+
+                    cli_movil         = field.cli_movil;
+
+                    cli_correo        = field.cli_correo;
+
+                    cli_latitud       = field.cli_latitud;
+
+                    cli_longitud      = field.cli_longitud;
+
+                    cli_ruta_logo     = field.cli_ruta_logo;
+
+                    cat_id            = field.cat_id;
+
+                    cat_nombre        = field.cat_nombre;
+
+                    alert (cli_latitud + ' ' + cli_longitud);
+
+                });
+
+            });
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="output"></div>
+
+</body>
+
+</html>
