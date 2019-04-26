@@ -11,7 +11,7 @@
     <access origin="*" />
     <access origin="*.google.com"/>
     <access origin="*.googleapis.com"/>
-    access origin="https://maps.googleapis.com"/>
+    <access origin="https://maps.googleapis.com"/>
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
